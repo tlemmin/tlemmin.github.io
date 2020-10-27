@@ -79,7 +79,7 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Lipid Builder</h1>
+        <h1>RosENet: Predicting binding affinity</h1>
         <p><a href="index.html">Home</a> / <a href="research.html">Research</a> </p>
     </div>
     <!-- end top-bar -->
@@ -87,29 +87,30 @@
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
-            <img src="img/membrane_1920x1080.png" alt="" class="img-responsive" />
+            <img src="img/rosenet_1920x1080.png" alt="" class="img-responsive" />
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">LipidBuilder</h3>
-            <h5>A Framework to create, store and share lipids</h5>
+            <h3 class="text-uppercase">RosENet</h3>
+            <h5>Rosetta Energy Neural Networks</h5>
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-9">
-            <p> The biological membrane is composed of a complex mixture of lipids. The fluid nature of the membrane coupled with the current resolution limitations of experimental techniques still hinders a detailed molecular understanding of membranes and membrane embedded proteins.</p>
-<p>Molecular dynamics simulations of a complex mixture of lipids are an ideal complement to the available experimental data. Unfortunately, the major difficulty in setting up such simulations has been the limited number of topology and template files available. </p>
-<p> I initiated and took part in the implementation of LipidBuilder, a framework that facilitated the creation of these files. As a result, only a few steps are now needed to create, store and share lipids. A curated collection of lipids allows for the assembly of membranes specific to several different organisms. A standalone version of LipidBuilder was integrated into VMD, a widely used molecular viewer. </p>
-<a href="http://lipidbuilder.epfl.ch"> LipidBuilder </a>
+		<p>The worldwide increase and proliferation of drug resistant microbes, coupled with the lag in new drug development, represents a major threat to human health. In order to reduce the time and cost for exploring the chemical search space, drug discovery increasingly relies on computational biology approaches. One key step in these approaches is the need for the rapid and accurate prediction of the binding affinity for potential leads. </p> 
+		<p> Here, we present <a href="https://github.com/DS3Lab/RosENet">RosENet</a> (Rosetta Energy Neural Networks), an ensemble of three-dimensional (3D) Convolutional Neural Networks (CNNs), which combines voxelized molecular mechanics energies and molecular descriptors for predicting the absolute binding affinity of protein–ligand complexes. By leveraging the physicochemical properties captured by the molecular force field, our ensemble model achieved a Root Mean Square Error (RMSE) of 1.24 on the PDBBind v2016 core set. </p>
+		<p>We also explored some limitations and the robustness of the PDBBind data set and our approach on nearly 500 structures, including structures determined by Nuclear Magnetic Resonance and virtual screening experiments. Our study demonstrated that molecular mechanics energies can be voxelized and used to help improve the predictive power of the CNNs. In the future, our framework can be extended to features extracted from other biophysical and biochemical models, such as molecular dynamics simulations.
+        </p>
+
         </div>
 
         <div class="col-md-3">
             <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Biological membrane</li>
-                <li><i class="ion-ios-circle-filled"></i> Complex lipids</li>
-                <li><i class="ion-ios-circle-filled"></i> Molecular Dynamics</li>
-                <li><i class="ion-ios-circle-filled"></i> VMD</li>
+                <li><i class="ion-ios-circle-filled"></i> Drug discovery</li>
+                <li><i class="ion-ios-circle-filled"></i> Binding affinity</li>
+                <li><i class="ion-ios-circle-filled"></i> Molecular energies</li>
+                <li><i class="ion-ios-circle-filled"></i> 3D Convolutional Neural Networks</li>
             </ul>
             </div>
     </div>
